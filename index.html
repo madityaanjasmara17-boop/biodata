@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Ahmad Rizki Pratama</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">Portfolio</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">Tentang</a></li>
+                <li><a href="#skills" class="nav-link">Keahlian</a></li>
+                <li><a href="#projects" class="nav-link">Proyek</a></li>
+                <li><a href="#contact" class="nav-link">Kontak</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Halo, Saya <span class="highlight">Ahmad Rizki Pratama</span>
+                </h1>
+                <p class="hero-subtitle">Full Stack Developer & UI/UX Designer</p>
+                <p class="hero-description">
+                    Saya adalah seorang developer yang passionate tentang membuat 
+                    aplikasi web modern dan inovatif. Dengan 5+ tahun pengalaman, 
+                    saya telah membantu berbagai perusahaan mencapai tujuan digital mereka.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">Lihat Proyek</a>
+                    <a href="#contact" class="btn btn-secondary">Hubungi Saya</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-placeholder">
+                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="200" height="200" fill="#6366f1" opacity="0.1"/>
+                        <circle cx="100" cy="80" r="30" fill="#6366f1"/>
+                        <path d="M 50 150 Q 100 120 150 150" stroke="#6366f1" stroke-width="3" fill="none"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Tentang Saya</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Saya adalah seorang Full Stack Developer yang telah bekerja di industri 
+                        teknologi selama lebih dari 5 tahun. Saya memiliki passion yang kuat 
+                        dalam menciptakan solusi digital yang tidak hanya indah secara visual, 
+                        tetapi juga fungsional dan user-friendly.
+                    </p>
+                    <p>
+                        Dengan latar belakang di bidang Computer Science dari Universitas Indonesia, 
+                        saya telah mengembangkan berbagai aplikasi web mulai dari e-commerce, 
+                        sistem manajemen, hingga platform SaaS. Saya percaya bahwa kombinasi 
+                        antara desain yang baik dan kode yang bersih adalah kunci untuk menciptakan 
+                        pengalaman digital yang luar biasa.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">67+</div>
+                            <div class="stat-label">Proyek Selesai</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">42+</div>
+                            <div class="stat-label">Klien Puas</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">5+</div>
+                            <div class="stat-label">Tahun Pengalaman</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Keahlian</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">💻</div>
+                    <h3 class="skill-title">Frontend Development</h3>
+                    <p class="skill-description">React, Vue.js, Next.js, TypeScript, Tailwind CSS</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">⚙️</div>
+                    <h3 class="skill-title">Backend Development</h3>
+                    <p class="skill-description">Node.js, Express, Python, Django, PostgreSQL, MongoDB</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🎨</div>
+                    <h3 class="skill-title">UI/UX Design</h3>
+                    <p class="skill-description">Figma, Adobe XD, Prototyping, Design Systems</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">📱</div>
+                    <h3 class="skill-title">Mobile & DevOps</h3>
+                    <p class="skill-description">React Native, Docker, AWS, CI/CD, Git</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Proyek Saya</h2>
+            <div class="projects-grid" id="projects-grid">
+                <div class="project-card" data-project-id="1">
+                    <div class="project-image">
+                        <div class="project-placeholder">Tokopedia Clone</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Tokopedia Clone - E-Commerce Platform</h3>
+                        <p class="project-description">
+                            Platform e-commerce lengkap dengan fitur keranjang belanja, checkout, 
+                            pembayaran terintegrasi, dan sistem manajemen produk. Dibangun dengan 
+                            React untuk frontend dan Node.js untuk backend.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                            <span class="tag">Express</span>
+                        </div>
+                        <a href="https://github.com/ahmadrizki/tokopedia-clone" class="project-link" target="_blank">Lihat Proyek →</a>
+                    </div>
+                </div>
+                <div class="project-card" data-project-id="2">
+                    <div class="project-image">
+                        <div class="project-placeholder">Analytics Dashboard</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Business Analytics Dashboard</h3>
+                        <p class="project-description">
+                            Dashboard interaktif untuk visualisasi data bisnis dengan grafik real-time, 
+                            laporan yang dapat diunduh, dan filter data yang powerful. Menggunakan 
+                            Vue.js dan D3.js untuk visualisasi yang menarik.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Vue.js</span>
+                            <span class="tag">D3.js</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Chart.js</span>
+                        </div>
+                        <a href="https://github.com/ahmadrizki/analytics-dashboard" class="project-link" target="_blank">Lihat Proyek →</a>
+                    </div>
+                </div>
+                <div class="project-card" data-project-id="3">
+                    <div class="project-image">
+                        <div class="project-placeholder">Task Manager App</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">TaskFlow - Task Management App</h3>
+                        <p class="project-description">
+                            Aplikasi manajemen tugas modern dengan fitur drag-and-drop, kolaborasi tim, 
+                            notifikasi real-time, dan integrasi kalender. Dibangun dengan Next.js dan 
+                            menggunakan WebSocket untuk update real-time.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Next.js</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">WebSocket</span>
+                        </div>
+                        <a href="https://github.com/ahmadrizki/taskflow" class="project-link" target="_blank">Lihat Proyek →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Hubungi Saya</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p class="contact-description">
+                        Tertarik untuk berkolaborasi? Mari kita diskusikan proyek Anda!
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>ahmad.rizki.pratama@email.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📱</div>
+                            <div>
+                                <h4>Telepon</h4>
+                                <p>+62 812 3456 7890</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div>
+                                <h4>Lokasi</h4>
+                                <p>Jakarta Selatan, Indonesia</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/ahmadrizki" class="social-link" target="_blank">GitHub</a>
+                        <a href="https://linkedin.com/in/ahmadrizki" class="social-link" target="_blank">LinkedIn</a>
+                        <a href="https://instagram.com/ahmadrizki.dev" class="social-link" target="_blank">Instagram</a>
+                        <a href="https://twitter.com/ahmadrizki_dev" class="social-link" target="_blank">Twitter</a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" class="form-input" placeholder="Nama Anda" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-input" placeholder="Email Anda" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-input" rows="5" placeholder="Pesan Anda" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Portfolio. Dibuat dengan ❤️</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
